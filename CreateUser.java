@@ -62,7 +62,7 @@ public class CreateUser {
 	        
 	        Attribute commonName = new BasicAttribute("cn");
 	        commonName.add(firstName + " " + lastName);
-	        
+	        System.out.println("I need to merge automatically");
 	        Attribute surname = new BasicAttribute("sn");
 	        surname.add(lastName);
 	
