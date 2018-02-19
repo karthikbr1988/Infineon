@@ -49,6 +49,7 @@ public class CreateUser {
     env.put(Context.PROVIDER_URL, ldapUri);
     env.put( Context.SECURITY_PRINCIPAL, admindn );
     env.put( Context.SECURITY_CREDENTIALS, admincred );
+	    System.out.println("ERROR: Failed to read properties);
     
     try {
 	        DirContext ctx = new InitialDirContext(env);
